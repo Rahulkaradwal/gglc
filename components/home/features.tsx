@@ -33,8 +33,8 @@ export default function Features() {
         We Keep Your Business Moving Forward!
       </h1>
 
-      <div className="flex flex-col lg:flex-row gap-12  w-full">
-        <div className="relative  w-[350px] h-[600px]">
+      <div className="flex flex-col  lg:flex-row gap-12  w-full">
+        <div className=" hidden lg:block relative   w-[350px] h-[600px]">
           <Image
             className="rounded-xl shadow-xl   object-cover"
             src="/delivery7.jpg"

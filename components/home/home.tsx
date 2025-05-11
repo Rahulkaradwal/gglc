@@ -27,7 +27,7 @@ const Home = () => {
         </div>
 
         {/* Image */}
-        <div className="w-full  max-w-md mx-auto lg:mx-0">
+        <div className="w-full   max-w-md mx-auto lg:mx-0">
           <Image
             src="/home-bg.png"
             alt="hero"
