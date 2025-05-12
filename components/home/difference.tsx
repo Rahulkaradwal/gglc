@@ -15,7 +15,7 @@ function Difference() {
         </p>
         <div>
           <Button className="md:border-2 border hover:bg-green-700 hover:text-white cursor-pointer md:h-10 border-green-700 text-green-700 bg-white">
-            Ship With US
+            Get a Quote
           </Button>
         </div>
       </div>

@@ -16,8 +16,8 @@ const FeatureItem = ({
   <div className="flex gap-6  items-center">
     <div className="bg-green-100 p-4 rounded-full">{icon}</div>
     <div>
-      <h2 className="text-xl  font-semibold mb-2">{title}</h2>
-      <ul className="list-disc pl-5 space-y-2 text-base md:text-lg">
+      <h2 className="md:text-xl  font-semibold mb-2">{title}</h2>
+      <ul className="list-disc pl-5 space-y-2 text-xs md:text-lg">
         {items.map((item, idx) => (
           <li key={idx}>{item}</li>
         ))}
@@ -28,12 +28,12 @@ const FeatureItem = ({
 
 export default function Features() {
   return (
-    <section className="flex  flex-col items-center justify-between w-full   px-2 md:px-24 xl:px-56 py-20">
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-16">
+    <section className="flex  flex-col items-center justify-between w-full   px-2 md:px-24 xl:px-56 py-10 md:py-20">
+      <h1 className="text-2xl md:text-5xl font-bold text-center mb-8 md:mb-16">
         We Keep Your Business Moving Forward!
       </h1>
 
-      <div className="flex flex-col  justify-between  lg:flex-row gap-12 md:gap-24 lg:gap-36 ">
+      <div className="flex flex-col  justify-between  lg:flex-row gap-6 md:gap-24 lg:gap-36 ">
         <div className=" hidden lg:block relative   w-[350px] h-[600px]">
           <Image
             className="rounded-xl shadow-xl   object-cover"
