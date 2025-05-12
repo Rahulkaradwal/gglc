@@ -14,7 +14,7 @@ function DeliveryData() {
       </div>
       <div className={divClass}>
         <p className={textClass}>
-          <RisingNumber targetNumber={500} duration={1500} />+
+          <RisingNumber targetNumber={10000} duration={1500} />+
         </p>
         <p className={descriptionClass}>Number of packages shipped</p>
       </div>

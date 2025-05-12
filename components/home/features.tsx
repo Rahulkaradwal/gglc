@@ -28,12 +28,12 @@ const FeatureItem = ({
 
 export default function Features() {
   return (
-    <section className="flex flex-col items-center justify-between w-full   px-2 md:px-24 xl:px-56 py-20">
+    <section className="flex  flex-col items-center justify-between w-full   px-2 md:px-24 xl:px-56 py-20">
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-16">
         We Keep Your Business Moving Forward!
       </h1>
 
-      <div className="flex flex-col  lg:flex-row gap-12  w-full">
+      <div className="flex flex-col  justify-between  lg:flex-row gap-12 md:gap-24 lg:gap-36 ">
         <div className=" hidden lg:block relative   w-[350px] h-[600px]">
           <Image
             className="rounded-xl shadow-xl   object-cover"
@@ -43,7 +43,7 @@ export default function Features() {
           />
         </div>
 
-        <div className="flex flex-col gap-10 flex-1">
+        <div className="flex flex-col gap-10 ">
           <FeatureItem
             title="Fast & Reliable"
             items={[

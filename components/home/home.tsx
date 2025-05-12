@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import DeliveryData from "../DeliveryData";
 import Features from "./features";
+import Difference from "./difference";
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
       </section>
       <DeliveryData />
       <Features />
+      <Difference />
     </>
   );
 };
