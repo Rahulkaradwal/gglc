@@ -1,7 +1,12 @@
+import Hero from "@/components/services/hero";
 import React from "react";
 
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default Services;
