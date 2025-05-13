@@ -31,6 +31,7 @@ function Hero() {
         <Image
           className="rounded-2xl    object-cover"
           src="/hero-bg.png"
+          priority
           alt="Delivery truck"
           fill
         />
