@@ -1,0 +1,49 @@
+import React from "react";
+
+function ChooseUs() {
+  return (
+    <section className="flex flex-col lg:flex-row justify-between items-start gap-4 p-2 sm:p-8 lg:mt-20 lg:px-10">
+      {/* Stats Boxes */}
+      <div className="flex flex-col gap-6 w-full lg:w-auto">
+        <div className="bg-green-50 rounded-xl font-semibold p-3 sm:p-8 lg:p-10 text-center">
+          <h1 className="text-2xl sm:text-5xl lg:text-[4rem]">98.7%</h1>
+          <p className="text-sm sm:text-xl">First-Attempt Delivery Rate</p>
+        </div>
+        <div className="bg-green-50 rounded-xl font-semibold p-3 sm:p-8 lg:p-10 text-center">
+          <h1 className="text-2xl sm:text-5xl lg:text-[4rem]">99.68%</h1>
+          <p className="text-sm sm:text-xl">Closing Delivery Rate</p>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="w-full lg:w-[40rem] flex flex-col gap-2 sm:gap-4 lg:gap-6">
+        <h3 className="text-green-700 font-semibold text-md sm:text-3xl">
+          Why Choose Us?
+        </h3>
+        <h1 className="font-bold text-xl sm:text-4xl lg:text-5xl leading-tight">
+          Delivering On Our Promises
+        </h1>
+
+        <div>
+          <h2 className="font-semibold text-green-700 text-md sm:text-2xl mb-2">
+            Competitive Pricing
+          </h2>
+          <p className="text-xs sm:text-lg lg:text-xl">
+            Package insurance and re-delivery attempts included
+          </p>
+        </div>
+
+        <div>
+          <h2 className="font-semibold text-green-700 text-md sm:text-2xl mb-2">
+            ISO & PIP Certified
+          </h2>
+          <p className="text-xs sm:text-lg lg:text-xl">
+            Customer service, safety and process excellence
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ChooseUs;
