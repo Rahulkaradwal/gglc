@@ -65,8 +65,8 @@ function Highlights() {
             className={`
               relative  border-2  border-green-800 shadow-md rounded-[1.7rem] rounded-br-sm 
               pt-10 md:pt-12 px-4 pb-4
-              w-40 h-24 
-              sm:w-48 sm:h-36 
+              w-32 h-24 
+              sm:w-40 sm:h-28 
               md:w-56 md:h-52 
               lg:w-72 lg:h-64
               flex flex-col items-center text-center transition-all duration-300

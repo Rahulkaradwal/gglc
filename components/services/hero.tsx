@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 function Hero() {
   return (
-    <section className="flex mt-2 sm:mt-10   lg:pt-44  lg:flex-row items-center justify-between gap-1 md:gap-10  sm:px-6 md:px-16  mb-10">
+    <section className="flex mt-2 sm:mt-10   lg:pt-28  lg:flex-row items-center justify-between gap-1 md:gap-10  sm:px-6 md:px-16  mb-10">
       {/* Text content */}
       <div className="w-2/3 md:text-center md:w-2/5  lg:text-left">
         <h3 className="text-sm md:text-2xl font-bold text-green-700 mb-2">
