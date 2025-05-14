@@ -4,10 +4,10 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="flex flex-col-reverse  lg:pt-28 lg:flex-row items-center justify-between gap-10 px-6 md:px-16 mt-10 mb-10">
+    <section className="flex flex-col-reverse  lg:pt-28 lg:flex-row items-center justify-between gap-6 px-4 md:px-16 mt-10 mb-10">
       {/* Text content */}
       <div className="text-center  lg:text-left">
-        <h3 className="text-lg md:text-2xl font-bold text-green-700 mb-2">
+        <h3 className="text-sm md:text-2xl font-bold text-green-700 mb-2">
           Reliable, Responsive, Revolutionary
         </h3>
         <h1 className="text-2xl md:text-5xl font-bold leading-tight mb-4">
