@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 function Difference() {
   return (
@@ -14,9 +14,12 @@ function Difference() {
           we&apos;re able to handle the increase in volume.
         </p>
         <div>
-          <Button className="md:border-2 border hover:bg-green-700 hover:text-white cursor-pointer md:h-10 border-green-700 text-green-700 bg-white">
+          <Link
+            href="/get-a-quote"
+            className="md:border-2 border px-3 py-2 text-md rounded-md hover:bg-green-700 hover:text-white cursor-pointer md:h-10 border-green-700 text-green-700 bg-white"
+          >
             Get a Quote
-          </Button>
+          </Link>
         </div>
       </div>
       <div className=" flex-1/2 block relative h-[230px]  w-[300px] md:h-[300px]">

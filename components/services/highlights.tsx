@@ -54,9 +54,10 @@ const items = [
 
 function Highlights() {
   return (
-    <section className="py-16 px-4 sm:px-6 md:px-10 ">
-      <h1 className="text-center text-[1.5rem] md:text-[3rem] font-bold  md:py-10 mb-14">
-        <span className="text-green-700">Green Gear</span> Service Highlights
+    <section className="py-6 md:py-16 sm:px-6 md:px-10 ">
+      <h1 className="text-center  text-[1.3rem] md:text-[3rem] font-bold  md:py-10 mb-10 md:mb-14">
+        <span className="text-green-700">Green Gear</span> Service&apos;s
+        Highlights
       </h1>
       <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10   md:gap-y-14 lg:gap-10 justify-items-center">
         {items.map((feature, index) => (
