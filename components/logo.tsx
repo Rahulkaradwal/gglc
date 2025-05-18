@@ -13,11 +13,11 @@ const Logo = () => {
         height={50}
       />
       <div className="hidden md:block">
-        <p className="text-xl font-bold text-green-700 italic leading-tight">
+        <p className="text-lg italic font-bold text-green-700  leading-tight">
           GREEN GEAR
         </p>
-        <p className="text-sm font-semibold text-green-600">
-          LOGISTICS & COURIERS
+        <p className="text-lgc  italic font-semibold text-green-700">
+          LOGISTICS
         </p>
       </div>
     </Link>
