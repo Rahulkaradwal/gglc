@@ -1,3 +1,4 @@
+import Partners from "@/components/Partners";
 import ChooseUs from "@/components/services/chooseUs";
 import Hero from "@/components/services/hero";
 import Highlights from "@/components/services/highlights";
@@ -9,6 +10,7 @@ const Services = () => {
       <Hero />
       <ChooseUs />
       <Highlights />
+      <Partners />
     </main>
   );
 };
