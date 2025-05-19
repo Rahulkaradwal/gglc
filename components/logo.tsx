@@ -16,9 +16,7 @@ const Logo = () => {
         <p className="text-lg italic font-bold text-green-700  leading-tight">
           GREEN GEAR
         </p>
-        <p className="text-lgc  italic font-semibold text-green-700">
-          LOGISTICS
-        </p>
+        <p className="text-lgc  italic font-bold text-green-700">LOGISTICS</p>
       </div>
     </Link>
   );
