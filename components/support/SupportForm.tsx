@@ -56,7 +56,7 @@ export default function SupportForm() {
   }
 
   return (
-    <section className="shadow-xl  border-gray-100 border-1 mt-10 -mx-4 rounded-3xl  p-6">
+    <section className="shadow-xl bg-white border-gray-100 border-1   -mx-4 rounded-3xl   p-6">
       <Form {...form}>
         <h1 className=" text-2xl  font-bold">Contact Support Form</h1>
         <form

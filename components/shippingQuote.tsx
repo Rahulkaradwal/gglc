@@ -18,7 +18,7 @@ function ShippingQuote({
 }: Props) {
   return (
     <div
-      className={`flex mt-4 md:mt-20 bg-gradient-to-r from-green-50 to-slate-100 rounded-2xl md:rounded-4xl md:mx-32 p-10  items-center flex-col gap-3 md:gap-6 ${className}`}
+      className={`flex mt-4 md:mt-20  rounded-2xl md:rounded-4xl md:mx-32 p-10  items-center flex-col gap-3 md:gap-6 ${className}`}
     >
       <div className="md:w-3/4 ">
         <h1 className="text-[1rem]  text-center md:text-[3rem] font-bold ">

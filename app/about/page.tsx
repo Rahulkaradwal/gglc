@@ -7,8 +7,8 @@ import React from "react";
 
 function About() {
   return (
-    <main>
-      <section className="pt-10 px-4 lg:px-0 relative">
+    <main className="bg-gradient-to-r   from-green-50 to-slate-100 -mx-10 pb-20">
+      <section className="pt-10 px-4 lg:px-0 relative mx-10">
         {/* Story Text */}
         <div className="mb-6 relative lg:ml-10">
           <h1 className="text-[2.2rem] lg:text-[3.6rem] mb-4 font-semibold">
@@ -99,6 +99,7 @@ function About() {
       </section>
       <SocialLinks />
       <ShippingQuote
+        className="bg-white"
         href="/get-a-quote"
         heading="Discover How Easy Shipping Can Be"
         description="We strive to be your first-choice for last-mile delivery"

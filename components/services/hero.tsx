@@ -1,7 +1,7 @@
 // Service page hero section
 import Image from "next/image";
 import React from "react";
-import { Button } from "../ui/button";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -19,10 +19,13 @@ function Hero() {
           an affordable and innovative delivery solution across North America,
           that scales on demand.
         </p>
-        <div>
-          <Button className="text-green-700 border-2  md:h-10 font-semibold mt-4 border-green-700 hover:text-white cursor-pointer bg-white">
-            Let&apos;s Talk
-          </Button>
+        <div className="mt-4">
+          <Link
+            href="/get-a-quote"
+            className="md:border-2  border px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-lg  md:font-semibold duration-300 hover:bg-green-700 hover:text-white cursor-pointer rounded-md border-green-700 text-green-700 bg-white"
+          >
+            Get a Quote
+          </Link>
         </div>
       </div>
 

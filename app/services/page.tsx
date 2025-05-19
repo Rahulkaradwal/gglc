@@ -13,6 +13,7 @@ const Services = () => {
       <Highlights />
       <Partners />
       <ShippingQuote
+        className="bg-gradient-to-r   from-green-50 to-slate-100"
         href="/get-a-quote"
         heading="Discover How Easy Shipping Can Be"
         description="We strive to be your first-choice for last-mile delivery"
