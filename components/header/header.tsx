@@ -6,8 +6,8 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { name: "Services", href: "/services" },
-  { name: "Support", href: "/support" },
+  { name: "Our Services", href: "/services" },
+  { name: "Contact Support", href: "/support" },
   { name: "About Us", href: "/about" },
   { name: "Join Us", href: "/join-us" },
 ];
@@ -16,7 +16,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b shadow-sm bg-white  top-0 left-0 z-50">
+    <nav className="w-full border-b shadow-sm bg-white top-0 left-0 z-50">
       <div className="flex items-center justify-between mx-6 md:mx-16 py-4">
         <Logo />
 

@@ -53,7 +53,7 @@ export default function QuoteForm() {
   }
 
   return (
-    <div className="shadow-xl  border-gray-100 border-1 mt-2 -mx-4  rounded-xl  px-6">
+    <div className="shadow-xl bg-white  border-gray-100 border-1 mt-2 -mx-4  rounded-xl  px-6">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}

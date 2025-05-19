@@ -7,7 +7,7 @@ function Difference() {
     <section className="flex md:px-10 lg:px-36 my-8 md:my-14  items-center justify-between gap-4">
       <div className="flex-3/4 flex flex-col gap-5">
         <h1 className="md:text-[3.5rem] text-2xl font-bold">The Difference</h1>
-        <p className="md:font-semibold md:text-lg text-xs ">
+        <p className=" md:text-lg text-xs ">
           Ensure peak performance during peak season! Our proprietary tech and
           unique crowd sourcing delivery solution enables us to flex our
           services on a daily basis. So when it gets busier and busier,
@@ -16,7 +16,7 @@ function Difference() {
         <div>
           <Link
             href="/get-a-quote"
-            className="md:border-2 border px-3 py-2 text-md rounded-md hover:bg-green-700 hover:text-white cursor-pointer md:h-10 border-green-700 text-green-700 bg-white"
+            className="md:border-2 border px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-lg  md:font-semibold duration-300  bg-green-700 text-white cursor-pointer rounded-md border-green-700 hover:text-green-700 hover:bg-white"
           >
             Get a Quote
           </Link>

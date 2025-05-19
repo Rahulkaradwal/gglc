@@ -29,7 +29,7 @@ const FeatureItem = ({
 export default function Features() {
   return (
     <section className="flex  flex-col items-center justify-between w-full   px-2 md:px-24 xl:px-56 py-10 md:py-20">
-      <h1 className="text-2xl md:text-5xl font-bold text-center mb-8 md:mb-16">
+      <h1 className="text-2xl md:text-5xl font-bold text-center mb-8 md:mb-16  ">
         We Keep Your Business Moving Forward!
       </h1>
 

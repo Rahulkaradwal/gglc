@@ -1,13 +1,14 @@
 "use client";
 
 import SocialLinks from "@/components/about/SocialLinks";
+import ShippingQuote from "@/components/shippingQuote";
 import Image from "next/image";
 import React from "react";
 
 function About() {
   return (
     <main>
-      <section className="py-10 px-4 lg:px-0 relative">
+      <section className="pt-10 px-4 lg:px-0 relative">
         {/* Story Text */}
         <div className="mb-6 relative lg:ml-10">
           <h1 className="text-[2.2rem] lg:text-[3.6rem] mb-4 font-semibold">
@@ -97,6 +98,13 @@ function About() {
         </div>
       </section>
       <SocialLinks />
+      <ShippingQuote
+        href="/get-a-quote"
+        heading="Discover How Easy Shipping Can Be"
+        description="We strive to be your first-choice for last-mile delivery"
+      >
+        Get a Quote
+      </ShippingQuote>
     </main>
   );
 }

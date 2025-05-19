@@ -3,7 +3,7 @@ import DeliveryData from "../DeliveryData";
 import Features from "./features";
 import Difference from "./difference";
 import Hero from "./hero";
-import ShippingQuote from "./shippingQuote";
+import ShippingQuote from "../shippingQuote";
 import JoinUs from "./join-us";
 
 const Home = () => {
@@ -13,7 +13,13 @@ const Home = () => {
       <DeliveryData />
       <Features />
       <Difference />
-      <ShippingQuote />
+      <ShippingQuote
+        href="/get-a-quote"
+        heading="Discover How Easy Shipping Can Be"
+        description="We strive to be your first-choice for last-mile delivery"
+      >
+        Get a Quote
+      </ShippingQuote>
       <JoinUs />
     </main>
   );

@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 function JoinUs() {
   return (
@@ -26,9 +26,12 @@ function JoinUs() {
             demand and match peak season spikes.
           </p>
           <div>
-            <Button className="md:border-2 border md:w-28 md:text-xl bg-green-700 text-white cursor-pointer md:h-10 border-green-700 hover:text-green-700 hover:bg-white">
+            <Link
+              href="/join-us"
+              className="md:border-2 border px-2 py-1 md:px-3 md:py-1.5 text-xs md:text-lg  md:font-semibold duration-300  bg-green-700 text-white cursor-pointer rounded-md border-green-700 hover:text-green-700 hover:bg-white"
+            >
               Join Us
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Logo from "./logo";
+import Link from "next/link";
 
 const sections = [
   {
@@ -7,7 +8,6 @@ const sections = [
     links: [
       { name: "Overview", href: "#" },
       { name: "Pricing", href: "#" },
-      { name: "Marketplace", href: "#" },
       { name: "Features", href: "#" },
     ],
   },
@@ -16,8 +16,7 @@ const sections = [
     links: [
       { name: "About", href: "#" },
       { name: "Team", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Careers", href: "#" },
+      { name: "Careers", href: "/join-us" },
     ],
   },
   {
@@ -25,7 +24,6 @@ const sections = [
     links: [
       { name: "Help", href: "#" },
       { name: "Sales", href: "#" },
-      { name: "Advertise", href: "#" },
       { name: "Privacy", href: "#" },
     ],
   },
@@ -42,8 +40,8 @@ const Footer = () => {
               <Logo />
             </div>
             <p className="text-sm hidden md:block text-muted-foreground">
-              Discover the Power of{" "}
-              <span className="text-green-700">Seamless</span> Delivery
+              Discover the Power of
+              <span className="text-green-700"> Seamless</span> Delivery
             </p>
             <ul className="flex items-center space-x-6 text-muted-foreground">
               <li className="font-medium hover:text-primary">
@@ -72,14 +70,15 @@ const Footer = () => {
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
                 <h3 className="mb-6 font-bold">{section.title}</h3>
-                <ul className="space-y-4 text-sm text-muted-foreground">
+                <ul className="space-y-4  text-xs md:text-sm text-muted-foreground">
                   {section.links.map((link, linkIdx) => (
-                    <li
+                    <Link
+                      href={link.href}
                       key={linkIdx}
                       className="font-medium hover:text-primary"
                     >
-                      <a href={link.href}>{link.name}</a>
-                    </li>
+                      <p className="">{link.name}</p>
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -87,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 flex flex-col justify-between gap-4 border-t pt-8 text-center text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
-          <p>© 2024 greengearlogistics.com. All rights reserved.</p>
+          <p>© 2025 greengearlogistics.com. All rights reserved.</p>
           <ul className="flex justify-center gap-4 lg:justify-start">
             <li className="hover:text-primary">
               <a href="#"> Terms and Conditions</a>

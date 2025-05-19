@@ -79,7 +79,7 @@ const SocialLinks = ({
   ],
 }: SocialLinksProps) => {
   return (
-    <section className="relative px-4 flex flex-col items-center  pb-10">
+    <section className="relative px-4 flex flex-col items-center  ">
       <div className="container  relative flex  flex-col items-center md:items-start md:flex-row lg:w-[65%] gap-8">
         <div className="w-full  max-w-md text-center md:text-left md:w-1/2">
           <h1 className="my-3 text-2xl md:w-[25rem]  font-bold text-pretty sm:text-3xl">

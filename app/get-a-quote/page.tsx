@@ -3,8 +3,8 @@ import React from "react";
 
 function GetAQuote() {
   return (
-    <div className="flex flex-col items-center  justify-center">
-      <section className="flex  lg:w-[80%] lg:flex-row gap-6 lg:gap-10  flex-col items-start pt-10  md:pt-32 justify-around">
+    <div className="flex flex-col bg-gradient-to-r from-green-50 to-slate-100 -mx-10 items-center  justify-center pb-14">
+      <section className="flex px-10 lg:w-[80%] lg:flex-row gap-6 lg:gap-10  flex-col items-start pt-10  md:pt-32 justify-around">
         <div className=" lg:w-[40%] w-[100%] lg:pt-2">
           <h1 className=" text-lg md:text-4xl font-bold mb-3 md:mb-4 lg:mb-6 ">
             Elevate Your Shipping with Green Gear Logistics:
