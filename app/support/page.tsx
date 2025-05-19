@@ -29,6 +29,7 @@ function Support() {
                   src="/delivery-boy.jpg"
                   alt="Delivery truck"
                   fill
+                  priority
                 />
               </div>
             </div>
