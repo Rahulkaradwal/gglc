@@ -35,11 +35,10 @@ const SocialLinks = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook className="size-10 text-green-700 hover:text-green-600" />
+            <Facebook className="size-8 sm:size-9 md:size-10 text-green-700 hover:text-green-600" />
           </Link>
         ),
       },
-
       {
         id: "instagram",
         icon: (
@@ -48,7 +47,7 @@ const SocialLinks = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram className="size-10 text-green-700 hover:text-green-600" />
+            <Instagram className="size-6 sm:size-9 md:size-10 text-green-700 hover:text-green-600" />
           </Link>
         ),
       },
@@ -60,7 +59,7 @@ const SocialLinks = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Twitter className="size-10 text-green-700 hover:text-green-600" />
+            <Twitter className="size-6 sm:size-9 md:size-10 text-green-700 hover:text-green-600" />
           </Link>
         ),
       },
@@ -72,7 +71,7 @@ const SocialLinks = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin className="size-10 text-green-700 hover:text-green-600" />
+            <Linkedin className="size-6 sm:size-9 md:size-10 text-green-700 hover:text-green-600" />
           </Link>
         ),
       },
@@ -80,40 +79,40 @@ const SocialLinks = ({
   ],
 }: SocialLinksProps) => {
   return (
-    <section className="relative px-4  flex items-center  flex-col lg:px-14  pb-10">
-      <div className="container relative flex flex-col lg:w-[65%]  items-start md:flex-row md:items-center ">
-        <div className="z-20 -mx-4 w-full shrink-0 bg-background px-4 md:w-1/2 md:bg-transparent">
-          <div className="flex flex-col items-start text-left">
-            <div className="max-w-sm">
-              <h1 className="my-6 text-xl font-bold text-pretty lg:text-2xl">
-                {heading}
-              </h1>
-            </div>
-          </div>
+    <section className="relative px-4 flex flex-col items-center  pb-10">
+      <div className="container  relative flex  flex-col items-center md:items-start md:flex-row lg:w-[65%] gap-8">
+        <div className="w-full  max-w-md text-center md:text-left md:w-1/2">
+          <h1 className="my-3 text-2xl md:w-[25rem]  font-bold text-pretty sm:text-3xl">
+            {heading}
+          </h1>
         </div>
-        <div>
-          <div className="flex flex-col gap-16">
-            {integrations.map((line, i) => (
-              <div key={i} className="flex gap-x-6 odd:-translate-x-6">
-                {line.map((integration) => (
-                  <div
-                    key={integration.id}
-                    className="size-22 flex items-center justify-center rounded-xl border border-background bg-background shadow-xl"
-                  >
-                    <div className="h-full  rounded-xl duration-300 hover:border-2 hover:border-green-700  w-full cursor-pointer flex items-center justify-center bg-muted/20 p-4">
-                      {integration.icon}
-                    </div>
+
+        <div className="w-full flex flex-col gap-10 sm:gap-12">
+          {integrations.map((line, i) => (
+            <div
+              key={i}
+              className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-4 odd:-translate-x-2 sm:odd:-translate-x-4"
+            >
+              {line.map((integration) => (
+                <div
+                  key={integration.id}
+                  className="w-12 md:w-16 md:h-16 h-12 flex items-center justify-center rounded-xl border border-background bg-background shadow-xl"
+                >
+                  <div className="w-full h-full flex items-center justify-center bg-muted/20 rounded-xl hover:border-2 hover:border-green-700 duration-300">
+                    {integration.icon}
                   </div>
-                ))}
-              </div>
-            ))}
-          </div>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
-      <div className="relative pt-24">
+
+      {/* Join Our Team Section */}
+      <div className="relative pt-20 w-full px-4 sm:px-0">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
-          <p className="text-muted-foreground mb-6">
+          <h2 className="text-2xl font-bold mb-4">Join Our Team</h2>
+          <p className=" text-sm md:text-base text-muted-foreground mb-6">
             We&apos;re always looking for talented, passionate people to help
             shape the future of our products and culture. Come build with us!
           </p>
@@ -121,7 +120,7 @@ const SocialLinks = ({
           <div className="flex justify-center">
             <Link
               href="/join-us"
-              className="group relative flex transform items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-md border border-white bg-green-700 px-8 py-3 text-base font-medium text-white transition-all duration-300 hover:ring-2 hover:ring-green-700 hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="group relative flex transform items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-md border border-white bg-green-700 px-6 py-3 text-sm sm:text-base font-medium text-white transition-all duration-300 hover:ring-2 hover:ring-green-700 hover:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Join Us
