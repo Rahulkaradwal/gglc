@@ -9,7 +9,7 @@ const links = [
   { name: "Services", href: "/services" },
   { name: "Support", href: "/support" },
   { name: "About Us", href: "/about" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Join Us", href: "/join-us" },
 ];
 
 const Header = () => {
