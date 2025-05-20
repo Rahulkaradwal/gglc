@@ -8,9 +8,9 @@ import React from "react";
 function About() {
   return (
     <main className="bg-gradient-to-r   from-green-50 to-slate-100 -mx-10 pb-20">
-      <section className="pt-10 px-4 lg:px-0 relative mx-10">
+      <section className="pt-10 px-4  lg:px-0 relative mx-10">
         {/* Story Text */}
-        <div className="mb-6 relative lg:ml-10">
+        <div className="mb-6 2xl:px-[10%]  relative lg:ml-10">
           <h1 className="text-[2.2rem] lg:text-[3.6rem] mb-4 font-semibold">
             Our Story
           </h1>
@@ -24,7 +24,7 @@ function About() {
         </div>
 
         {/* Additional Story */}
-        <div className="relative lg:absolute lg:left-10 lg:w-[50rem]  mt-6 lg:mt-0">
+        <div className="relative 2xl:ml-[10%] lg:absolute lg:left-10 lg:w-[50rem]   mt-6 lg:mt-0">
           <p className="text-sm lg:text-lg">
             What began as a desire to improve the delivery of big & bulky items
             quickly grew into a mission to provide smarter, greener, and more
@@ -36,7 +36,7 @@ function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 xl:px-10  mb-10  md:grid-cols-3 xl:grid-cols-4 gap-5 relative max-w-screen-xl mx-auto py-16">
+        <div className="grid grid-cols-1 xl:px-10  2xl:px-0  mb-16  md:grid-cols-3 xl:grid-cols-4 2xl:gap-y-10 gap-5 2xl:gap-x-[33rem] relative max-w-screen-xl mx-auto 2xl:ml-[22rem] py-16">
           {[
             {
               src: "/deliver2.jpg",
@@ -71,7 +71,7 @@ function About() {
           ].map(({ src, col, lgHeight }, i) => (
             <div
               key={i}
-              className={`relative w-full h-[14rem] md:w-[16rem] md:h-[20rem] ${lgHeight} ${col} lg:w-[17.1rem] bg-white rounded-lg flex items-center justify-center overflow-hidden`}
+              className={`relative w-full h-[14rem] md:w-[16rem] md:h-[20rem]  ${lgHeight} ${col} lg:w-[17.1rem] bg-white rounded-lg flex items-center justify-center overflow-hidden`}
             >
               <Image
                 src={src}
@@ -85,7 +85,7 @@ function About() {
         </div>
 
         {/* Workplace Section */}
-        <div className="mt-10 relative lg:absolute lg:right-20 lg:bottom-[5rem] w-full lg:w-[36rem]">
+        <div className="mt-10 relative lg:absolute lg:right-14 lg:-bottom-[1rem] w-full lg:w-[36rem] 2xl:w-[50rem] 2xl:right-[22rem]">
           <h1 className="text-xl lg:text-3xl font-bold mb-4">Our Workplace</h1>
           <p className="text-sm lg:text-lg">
             At Green Gear Logistics, our workplace culture is built on
