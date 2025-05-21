@@ -22,7 +22,8 @@ const Logo = () => {
         <p className="text-lg italic font-bold text-green-700 leading-tight">
           GREEN GEAR
         </p>
-        <p className="text-lg italic -ml-1 font-bold text-green-700 tracking-[0.12em]">
+        {/* tracking-[.2rem] */}
+        <p className="text-[1.29rem] italic -ml-1 font-bold text-green-700 ">
           LOGISTICS
         </p>
       </div>
