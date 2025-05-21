@@ -119,6 +119,7 @@ import ShippingQuote from "@/components/shippingQuote";
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import FounderInfo from "@/components/about/FounderInfo";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -242,6 +243,8 @@ function About() {
       </section>
 
       {/* Social Links & Quote */}
+      <FounderInfo />
+
       <SocialLinks />
       <ShippingQuote
         className="bg-white"
