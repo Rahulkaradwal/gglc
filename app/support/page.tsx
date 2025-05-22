@@ -1,4 +1,4 @@
-import ShippingQuote from "@/components/shippingQuote";
+// import ShippingQuote from "@/components/shippingQuote";
 import SupportAccordion from "@/components/support/Accordion";
 import SupportForm from "@/components/support/SupportForm";
 import Image from "next/image";
@@ -68,14 +68,15 @@ function Support() {
             <SupportForm />
           </div>
         </section>
-        <ShippingQuote
+
+        {/* <ShippingQuote
           href="/get-a-quote"
           heading="Discover How Easy Shipping Can Be"
           description="We strive to be your first-choice for last-mile delivery"
           className="bg-white border-gray-200"
         >
           Get a Quote
-        </ShippingQuote>
+        </ShippingQuote> */}
       </div>
     </main>
   );

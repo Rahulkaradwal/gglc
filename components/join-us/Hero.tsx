@@ -7,28 +7,28 @@ import { Car, FileText, Handshake, IdCard, Speech, User } from "lucide-react";
 const items = [
   {
     title: "Valid Canadian Driver's License",
-    icon: <IdCard size={62} />,
+    icon: <IdCard className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
     title: "Access to vehicle and smartphone",
-    icon: <Car size={62} />,
+    icon: <Car className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
 
   {
     title: "Eligible to work in the Canada",
-    icon: <User size={62} />,
+    icon: <User className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
     title: "Criminal Record",
-    icon: <FileText size={62} />,
+    icon: <FileText className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
     title: "Responsible and Friendly",
-    icon: <Handshake size={62} />,
+    icon: <Handshake className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
     title: "Good English Proficiency",
-    icon: <Speech size={62} />,
+    icon: <Speech className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
 ];
 
@@ -90,15 +90,15 @@ function Hero() {
         </div>
 
         {/* Image */}
-        <div className="  w-[26rem] md:w-[35rem] lg:w-[40rem]  border border-gray-100 shadow-2xl rounded-2xl    relative h-fit px-4 pt-10 pb-16">
-          <h1 className="text-lg  px-4  mt-2 md:mt-4 md:text-2xl lg:text-4xl font-semibold mb-4">
+        <div className="  w-fit md:w-[35rem] lg:w-[40rem] bg-gradient-to-l from-green-50 to-slate-100  border border-gray-100 shadow-2xl rounded-2xl md:mt-0 mt-6 -mx-2 relative h-fit md:px-4 pt-6 pb-16">
+          <h1 className="text-lg pl-6 px-4  mt-2 md:mt-4 md:text-2xl lg:text-4xl font-semibold mb-4">
             Requirements
           </h1>
           <div className="grid  grid-cols-3 gap-2">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="  flex   text-center items-center flex-col w-[8rem] md:w-[10rem]   px-5  py-1  "
+                className="  flex   text-center items-center flex-col w-fit md:w-[10rem]   px-5  py-1  "
               >
                 <span
                   className={`   text-green-800 
@@ -107,7 +107,7 @@ function Hero() {
                 >
                   {item.icon}
                 </span>
-                <p className=" font-semibold text-xs md:text-sm">
+                <p className=" font-semibold text-[0.6rem] md:text-sm">
                   {item.title}
                 </p>
               </div>

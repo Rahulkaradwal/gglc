@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const FounderInfo = () => {
   return (
-    <section className="flex px-12 md:px-10 mt-10 md:pt-16 lg:px-36 my-8 md:my-14  items-center justify-between gap-4">
+    <section className="flex px-12 md:px-10 mt-10 md:pt-16 lg:px-30 my-8 md:my-14  items-center justify-between gap-4">
       <div className="flex-3/4   flex flex-col gap-5">
         <h1 className="md:text-[3.5rem] text-2xl font-bold">
           Meet Our Founder

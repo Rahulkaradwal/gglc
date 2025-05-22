@@ -5,13 +5,13 @@ function ChooseUs() {
     <section className="flex flex-col lg:flex-row justify-between items-start gap-4 p-2 sm:p-8 lg:mt-20 lg:px-10">
       {/* Stats Boxes */}
       <div className="flex flex-col gap-6  2xl:w-[55rem] w-full lg:w-auto">
-        <div className="bg-green-50 rounded-xl font-semibold p-3 sm:p-8 lg:p-10 text-center">
+        <div className="bg-gradient-to-l shadow-xl   from-green-50 to-slate-100 border-0 border-gray-100 rounded-xl font-semibold p-3 sm:p-8 lg:p-10 text-center">
           <h1 className="text-2xl sm:text-5xl lg:text-[4rem] 2xl:text-[5rem]">
             98.7%
           </h1>
           <p className="text-sm sm:text-xl">First-Attempt Delivery Rate</p>
         </div>
-        <div className="bg-green-50 rounded-xl font-semibold p-3 sm:p-8 lg:p-10 text-center ">
+        <div className="bg-gradient-to-r shadow-xl  from-green-50 to-slate-100 rounded-xl font-semibold p-3 sm:p-8 lg:p-10 text-center ">
           <h1 className="text-2xl sm:text-5xl lg:text-[4rem] 2xl:text-[5rem]">
             99.68%
           </h1>
