@@ -204,7 +204,7 @@ export default function RegistrationForm() {
                   >
                     <FormControl className="w-full">
                       <SelectTrigger>
-                        <SelectValue placeholder="Select License Type" />
+                        <SelectValue placeholder="Select Type" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -232,7 +232,7 @@ export default function RegistrationForm() {
                   >
                     <FormControl className="w-full">
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Visa Type" />
+                        <SelectValue placeholder="Select Type" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
