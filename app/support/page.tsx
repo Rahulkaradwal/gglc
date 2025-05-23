@@ -68,15 +68,6 @@ function Support() {
             <SupportForm />
           </div>
         </section>
-
-        {/* <ShippingQuote
-          href="/get-a-quote"
-          heading="Discover How Easy Shipping Can Be"
-          description="We strive to be your first-choice for last-mile delivery"
-          className="bg-white border-gray-200"
-        >
-          Get a Quote
-        </ShippingQuote> */}
       </div>
     </main>
   );
