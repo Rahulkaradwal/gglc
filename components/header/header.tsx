@@ -1,9 +1,10 @@
-// components/Header.tsx
 "use client";
+
 import React, { useState } from "react";
 import Logo from "../logo";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const links = [
   { name: "Our Services", href: "/services" },
@@ -13,17 +14,29 @@ const links = [
   { name: "Join Us", href: "/join-us" },
 ];
 
+const dashboardLinks = [
+  { name: "Join Requests", href: "/dashboard/join-requests" },
+  { name: "Quote Requests", href: "/dashboard/quote-requests" },
+  { name: "Support Requests", href: "/dashboard/support-requests" },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isDashboard = pathname.startsWith("/dashboard");
+  const navLinks = isDashboard ? dashboardLinks : links;
 
   return (
-    <nav className="w-full border-b shadow-sm bg-white top-0 left-0 z-50">
+    <nav
+      className="w-full border-b shadow-sm bg-white top-0 left-0 z-50"
+      role="navigation"
+    >
       <div className="flex items-center justify-between mx-6 md:mx-16 py-4">
         <Logo />
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-10 text-gray-800 font-semibold text-lg">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <li key={link.name} className="group relative cursor-pointer">
               <Link
                 href={link.href}
@@ -36,20 +49,21 @@ const Header = () => {
           ))}
         </ul>
 
-        {/* Mobile Menu Icon */}
+        {/* Mobile Toggle Button */}
         <button
           className="md:hidden text-gray-800 cursor-pointer"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Navigation */}
       {menuOpen && (
         <ul className="flex flex-col items-start px-6 md:hidden bg-white shadow-md border-t">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <li key={link.name} className="w-full py-3 border-b">
               <Link
                 href={link.href}
