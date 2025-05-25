@@ -44,7 +44,7 @@ function JoinRequests() {
           ))}
         </div>
       ) : (
-        <div className="px-4">
+        <div className="px-4 lg:px-10">
           <JoinRequestsTableWrapper registrations={registrations} />
         </div>
       )}
