@@ -9,19 +9,19 @@ function DeliveryData() {
     <div className=" w-full h-28 md:h-40 bg-green-50 flex text-center justify-around p-4   ">
       <div className={divClass}>
         <p className={textClass}>
-          <RisingNumber targetNumber={70} duration={1000} />%
+          <RisingNumber targetNumber={70} duration={1500} />%
         </p>
         <p className={descriptionClass}>Average Saving</p>
       </div>
       <div className={divClass}>
         <p className={textClass}>
-          <RisingNumber targetNumber={10000} duration={1500} />+
+          <RisingNumber targetNumber={20000} duration={1500} />+
         </p>
         <p className={descriptionClass}>Number of packages shipped</p>
       </div>
       <div className={divClass}>
         <p className={textClass}>
-          <RisingNumber targetNumber={80} duration={1000} />+
+          <RisingNumber targetNumber={80} duration={1500} />+
         </p>
         <p className={descriptionClass}>Distribution Points</p>
       </div>

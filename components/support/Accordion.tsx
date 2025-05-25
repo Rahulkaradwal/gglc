@@ -19,8 +19,14 @@ const AccordionItems = [
         chatbot will assist you in creating a support ticket.
         <br />
         <br />
-        Visit <strong>www.greengears.com/support/</strong> to use the chatbot
-        and check the FAQ section for the parcel status list.
+        Visit{" "}
+        <Link
+          className="text-green-700"
+          href="https://www.greengears.ca/support/"
+        >
+          www.greengears.ca/support/
+        </Link>{" "}
+        to use the chatbot and check the FAQ section for the parcel status list.
       </>
     ),
   },
@@ -56,10 +62,10 @@ const AccordionItems = [
         <br />
         1. <strong>Submit a Support Ticket:</strong> Visit{" "}
         <Link
-          href="https://www.greengears.com/support/"
+          href="https://www.greengears.ca/support/"
           className="text-green-700"
         >
-          www.greengears.com/support/
+          www.greengears.ca/support/
         </Link>{" "}
         to submit a ticket.
         <br />
@@ -93,10 +99,10 @@ const AccordionItems = [
         number, gate code, or delivery instructions. If you need to update any
         of these details, please submit a support ticket at{" "}
         <Link
-          href="https://www.greengears.com/support/"
+          href="https://www.greengears.ca/support/"
           className="text-green-700 "
         >
-          www.greengears.com/support/
+          www.greengears.ca/support/
         </Link>
         .
         <br />
@@ -106,10 +112,10 @@ const AccordionItems = [
         your parcel is in the “Storage” parcel status, submit a support ticket
         at{" "}
         <Link
-          href="https://www.greengears.com/support/"
+          href="https://www.greengears.ca/support/"
           className="text-green-700 "
         >
-          www.greengears.com/support/
+          www.greengears.ca/support/
         </Link>
         to arrange a second delivery.
         <br />

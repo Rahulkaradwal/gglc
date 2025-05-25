@@ -11,7 +11,7 @@ function Support() {
         <div className="flex flex-col  items-center  justify-center">
           <section className="flex px-10 lg:w-[80%] md:flex-row gap-6 lg:gap-10  flex-col items-start pt-10   justify-around">
             <div className=" lg:w-[40%] w-[100%] lg:pt-2">
-              <h1 className=" text-lg md:text-5xl font-bold mb-3 md:mb-4 lg:mb-6 ">
+              <h1 className=" text-lg text-green-700 md:text-5xl font-bold mb-3 md:mb-4 lg:mb-6 ">
                 FAQs
               </h1>
               <p className="text-sm mb-6 md:text-xl">
@@ -50,17 +50,22 @@ function Support() {
             </h1>
             <div className="flex flex-col gap-4 lg:gap-6 text-sm lg:text-xl">
               <div className="font-semibold">
-                You can also contact us by phone.
+                You can also contact us by{" "}
+                <span className="text-green-700">Phone</span>.
               </div>
               <div>
                 <h4>For Customer Service in Canada:</h4>
-                <p> +1 (800) 123-4567</p>
+                <p> +1 (647) 517-2949</p>
               </div>
               <div className="font-semibold">
-                You can also contact us by Email.
+                You can also contact us by{" "}
+                <span className="text-green-700">Email</span>.
               </div>
-              <div>
-                <p> greengearlogistics@gmail.com</p>
+              <div className="flex flex-col  gap-2">
+                <p className="hover:text-green-600">
+                  greengearlogistics@gmail.com
+                </p>
+                <p className="hover:text-green-600"> dispatch.gglc@gmail.com</p>
               </div>
             </div>
           </div>

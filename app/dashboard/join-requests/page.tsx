@@ -35,7 +35,7 @@ function JoinRequests() {
       />
 
       {view === "grid" ? (
-        <div className="flex flex-wrap gap-6 px-4 lg:px-10">
+        <div className="flex flex-wrap  gap-6 px-4 lg:px-10 2xl:px-28">
           {registrations.map((registration) => (
             <JoinRequestsCard
               key={registration.id}

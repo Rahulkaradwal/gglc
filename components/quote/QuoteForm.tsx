@@ -196,7 +196,7 @@ export default function QuoteForm() {
               <FormItem>
                 <FormLabel>Contact Number</FormLabel>
                 <FormControl className="-mb-4">
-                  <Input placeholder="" type="number" {...field} />
+                  <Input placeholder="" type="text" {...field} />
                 </FormControl>
 
                 <FormMessage />

@@ -15,9 +15,12 @@ function Hero() {
           The Last Mile, Made Easy
         </h1>
         <p className="text-xs md:text-lg ">
-          At GGLC, the logistics behind your business is OUR Business. We offer
-          an affordable and innovative delivery solution across North America,
-          that scales on demand.
+          At GGLC, we specialize in managing the logistics that power your
+          business. Our cost-effective, tech-enabled delivery solutions span
+          across North America and are built to scale with demand. Whether
+          navigating peak volumes or expanding operations, we provide the
+          flexibility, efficiency, and reliability needed to keep your supply
+          chain moving smoothly
         </p>
         <div className="mt-4">
           <Link

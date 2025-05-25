@@ -24,14 +24,20 @@ function About() {
           variants={fadeUp}
         >
           <h1 className="text-[2.2rem] lg:text-[3.6rem] mb-4 font-semibold">
-            Our Story
+            Our <span className="text-green-700">Story</span>
           </h1>
           <p className="text-sm lg:text-lg leading-relaxed">
-            Green Gear Logistics was founded by Kumar Kosuri, whose passion for
-            innovation led to a vision of transforming last-mile delivery. What
-            began as an effort to improve the delivery of big & bulky items
-            evolved into a mission to provide smarter, greener, and more
-            reliable logistics.
+            Green Gear Logistics was founded by{" "}
+            <span className=" font-semibold">Kumar Kosuri</span>, a passionate
+            innovator driven to transform the last-mile delivery experience.
+            What began as a mission to improve the delivery of big and bulky
+            items quickly evolved into a commitment to delivering smarter,
+            greener, and more reliable logistics solutions. Kumar envisioned a
+            company that not only moved goods efficiently but also created
+            meaningful, customer-first experiences. With a strong focus on
+            sustainability, real-time tracking technology, and a flexible,
+            scalable fleet, Green Gear Logistics is redefining how businesses
+            approach last-mile delivery.
           </p>
         </motion.div>
 
@@ -44,13 +50,10 @@ function About() {
           variants={fadeUp}
         >
           <p className="text-sm lg:text-lg leading-relaxed">
-            What began as a desire to improve the delivery of big & bulky items
-            quickly grew into a mission to provide smarter, greener, and more
-            reliable solutions. With real-time tracking technology, a flexible
-            fleet, and a commitment to reducing emissions, Green Gear helps
-            businesses enhance customer experiences, lower costs, and reduce
-            their environmental impact — all while pushing the boundaries of
-            last-mile delivery.
+            Today, we&apos;re proud to be a trusted logistics partner helping
+            companies reduce costs, improve customer satisfaction, and minimize
+            their environmental footprint — all while pushing the boundaries of
+            what delivery can achieve.
           </p>
         </motion.div>
 
@@ -58,32 +61,32 @@ function About() {
         <div className="grid grid-cols-1 xl:px-10 2xl:px-0  md:grid-cols-3 xl:grid-cols-4 gap-5 max-w-screen-xl mx-auto 2xl:ml-[22rem] py-16">
           {[
             {
-              src: "/deliver2.jpg",
+              src: "/two-trucks.png",
               col: "lg:col-start-4 lg:row-start-1 hidden lg:block lg:row-span-3",
               lgHeight: "lg:h-[20rem]",
             },
             {
-              src: "/delivery1.jpg",
+              src: "/delivered-parcel.jpeg",
               col: "lg:col-start-4 lg:row-start-4 hidden lg:block lg:row-span-3",
               lgHeight: "lg:h-[18rem]",
             },
             {
-              src: "/delivery5.jpg",
+              src: "/boxes-in-truck.jpeg",
               col: "lg:col-start-2 lg:row-start-3 lg:row-span-2",
               lgHeight: "lg:h-[17rem]",
             },
             {
-              src: "/delivery9.jpg",
+              src: "/tesla-driver.png",
               col: "lg:col-start-2 lg:row-start-5 hidden lg:block lg:row-span-3",
               lgHeight: "lg:h-[22rem]",
             },
             {
-              src: "/delivery-boy.jpg",
+              src: "/delivery-truck.png",
               col: "lg:col-start-3 lg:row-start-2 lg:row-span-3",
               lgHeight: "lg:h-[24rem]",
             },
             {
-              src: "/delivery6.jpg",
+              src: "/container2.png",
               col: "lg:col-start-1 lg:row-start-4 lg:row-span-4",
               lgHeight: "lg:h-[26rem] ",
             },
@@ -115,14 +118,16 @@ function About() {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h1 className="text-xl lg:text-3xl font-bold mb-4">Our Workplace</h1>
+          <h1 className="text-xl lg:text-3xl font-bold mb-4">
+            Our <span className="text-green-700">Workplace</span>
+          </h1>
           <p className="text-sm lg:text-lg leading-relaxed">
-            At Green Gear Logistics, our workplace culture is built on
-            innovation, collaboration, and a shared commitment to
-            sustainability. We empower our team to solve real-world challenges,
-            support each other&apo;s growth, and drive meaningful change in the
-            logistics space. Whether in the field or at our headquarters, every
-            role contributes to delivering smarter, greener solutions.
+            At Green Gear Logistics, our workplace is built on innovation,
+            collaboration, and a shared commitment to sustainability. We empower
+            our team to solve real-world challenges, support each other&apos;s
+            growth, and drive meaningful change in the logistics space. Whether
+            in the field or at our headquarters, every role contributes to
+            delivering smarter, greener solutions.
           </p>
         </motion.div>
       </section>

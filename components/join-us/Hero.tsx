@@ -15,11 +15,11 @@ const items = [
   },
 
   {
-    title: "Eligible to work in the Canada",
+    title: "Eligible to work in Canada",
     icon: <User className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
-    title: "Criminal Record",
+    title: "No Criminal Record",
     icon: <FileText className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
@@ -27,7 +27,7 @@ const items = [
     icon: <Handshake className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
   {
-    title: "Good English Proficiency",
+    title: "Good Communication Skills",
     icon: <Speech className="w-[40px] h-[40px] md:w-[62px] md:h-[62px]" />,
   },
 ];
@@ -42,7 +42,7 @@ function Hero() {
           Fast, Reliable, Flexible
         </h3> */}
           <h1 className="text-lg mt-2 md:mt-4 md:text-2xl lg:text-4xl xl:text-6xl font-semibold mb-4">
-            Drive towards your goals
+            Drive Towards Your <span className="text-green-700">Goals</span>
           </h1>
           <p className="text-xs md:text-lg mt-8 ">
             Our drivers enjoy competitive rates and get a base amount per
@@ -84,8 +84,9 @@ function Hero() {
             Deliver for a company that really cares about every employee?
           </p>
           <p className="text-xs md:text-lg mt-8 ">
-            At UniUni, we&apos;re excited to put you in the driver&apos;s seat,
-            where you enjoy blue skies and an open road. Sounds good, right?
+            At Green Gear Logistics, we&apos;re excited to put you in the
+            driver&apos;s seat, where you enjoy blue skies and an open road.
+            Sounds good, right?
           </p>
         </div>
 

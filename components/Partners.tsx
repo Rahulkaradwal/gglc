@@ -63,16 +63,17 @@ const Partners = ({
       <div className="flex flex-col md:flex-row items-start lg:gap-10 px-4 md:px-24 justify-between">
         <div className="flex-2/3">
           <h3 className="text-md lg:text-[3rem] mb-2 font-semibold">
-            <span className="text-green-700">Our</span> Partners
+            Our <span className="text-green-700">Partners</span>
           </h3>
         </div>
         <div className="lg:w-2/3">
           <p className="text-sm lg:text-lg">
-            We&apos;ve all heard the expression: “There&apos;s strength in
-            numbers.” Well, we are proud to say, we&apos;ve partnered with some
-            of the biggest names in the industry to offer you the best in
-            last-mile shipping. Here&apos;s a nod to our logistics business
-            teams—the list keeps growing!
+            You&apos;ve probably heard the saying, &apos;Strength comes in
+            numbers.&apos; We&apos;re proud to bring that to life through
+            strategic partnerships with some of the industry&apos;s top names,
+            delivering exceptional last-mile shipping solutions. A big shoutout
+            to our growing network of logistics partners—our team keeps
+            expanding!
           </p>
         </div>
       </div>

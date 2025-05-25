@@ -283,7 +283,7 @@ export default function RegistrationForm() {
             </FormItem>
           )}
         />
-        <FormLabel className="mb-2">Start Date</FormLabel>
+        <FormLabel className="mb-2">Available Days</FormLabel>
 
         <div className="flex gap-2 flex-wrap">
           {days.map(({ key, label }) => (

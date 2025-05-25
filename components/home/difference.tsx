@@ -6,12 +6,14 @@ function Difference() {
   return (
     <section className="flex md:px-10 lg:px-36 my-8 md:my-14  items-center justify-between gap-4">
       <div className="flex-3/4 flex flex-col gap-5">
-        <h1 className="md:text-[3.5rem] text-2xl font-bold">The Difference</h1>
+        <h1 className="md:text-[3.5rem] text-2xl font-bold">
+          Our Driving <span className="text-green-700">Principle</span>
+        </h1>
         <p className=" md:text-lg text-xs ">
-          Ensure peak performance during peak season! Our proprietary tech and
-          unique crowd sourcing delivery solution enables us to flex our
-          services on a daily basis. So when it gets busier and busier,
-          we&apos;re able to handle the increase in volume.
+          Stay ahead during peak seasons with our innovative technology and
+          dynamic crowdsourced delivery network. Our flexible service model
+          adapts daily, allowing us to effortlessly scale and manage high volume
+          deliveries as demand rises.
         </p>
         <div>
           <Link

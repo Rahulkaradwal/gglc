@@ -78,7 +78,7 @@ const SocialLinks = ({
   ],
 }: SocialLinksProps) => {
   return (
-    <section className="flex  flex-col-reverse px-12 md:flex-row   items-start justify-between gap-8 lg:gap-20 2xl:gap-48">
+    <section className="flex  flex-col-reverse px-12 md:flex-row   items-start justify-between gap-8 lg:gap-20 2xl:gap-48 2xl:px-40 2xl:pl-[15rem]">
       <div className="  flex flex-col gap-5">
         <h1 className="text-2xl md:text-3xl font-semibold">
           Find us on Social Media
@@ -105,7 +105,9 @@ const SocialLinks = ({
       {/* Join Our Team Section */}
       <div className="  block relative  ">
         <div className=" mx-auto max-w-3xl ">
-          <h2 className="text-2xl font-bold mb-4">Join Our Team</h2>
+          <h2 className="text-2xl font-bold mb-4">
+            Join Our <span className="text-green-700">Team</span>
+          </h2>
           <p className=" text-sm md:text-base text-muted-foreground mb-6">
             We&apos;re always looking for talented, passionate people to help
             shape the future of our products and culture. Come build with us!

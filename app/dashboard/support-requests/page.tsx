@@ -33,7 +33,7 @@ function SupportRequests() {
       />
 
       {view === "grid" ? (
-        <div className="flex flex-wrap gap-6 px-4 lg:px-10">
+        <div className="flex flex-wrap gap-6 px-4 lg:px-10 2xl:px-28">
           {supportRequests.map((supportRequest) => (
             <SupportRequestCard
               key={supportRequest.id}

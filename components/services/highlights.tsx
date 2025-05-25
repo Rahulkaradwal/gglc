@@ -13,7 +13,7 @@ const items = [
   {
     title: "First-Attempt Delivery Excellence",
     description:
-      "98.7% First-Attempt Delivery Rate ensures packages reach their destination efficiently and on time",
+      "99.7% First-Attempt Delivery Rate ensures packages reach their destination efficiently and on time",
     icon: <Truck size={32} />,
   },
   {

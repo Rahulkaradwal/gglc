@@ -30,14 +30,15 @@ export default function Features() {
   return (
     <section className="flex  flex-col items-center justify-between w-full   px-2 md:px-24 xl:px-56 py-10 md:py-20">
       <h1 className="text-2xl md:text-5xl font-bold text-center mb-8 md:mb-16  ">
-        We Keep Your Business Moving Forward!
+        We Keep Your Business Moving{" "}
+        <span className="text-green-700">Forward!</span>
       </h1>
 
       <div className="flex flex-col  justify-between  lg:flex-row gap-6 md:gap-24 lg:gap-36 ">
         <div className=" hidden lg:block relative   w-[350px] h-[600px]">
           <Image
             className="rounded-xl shadow-xl   object-cover"
-            src="/delivery7.jpg"
+            src="/truck.png"
             alt="Delivery truck"
             fill
           />
@@ -55,7 +56,7 @@ export default function Features() {
           />
           <Separator />
           <FeatureItem
-            title="Quality Full-Service"
+            title="Seamless Service Experience"
             items={[
               "Easy integrations and platform access",
               "Dedicated account optimization",

@@ -16,14 +16,17 @@ function JoinUs() {
       <div className="w-1/2  md:ml-16 px-1 md:px-4">
         <div className=" flex-2/3  flex gap-3  flex-col  md:gap-6">
           <h1 className="text-green-700 text-sm md:text-2xl font-bold">
-            Candidates Wanted
+            Gear Up With Us{" "}
           </h1>
           <h1 className=" text-lg md:text-4xl font-bold">
-            Become a GGLC Driver
+            Become a{" "}
+            <span className="text-green-700 md:text-[2.3rem]">GGLC</span> Driver
           </h1>
-          <p className="md:font-semibold md:text-lg text-xs ">
-            Our inter-connected, flexible fleet of drivers expands to meet
-            demand and match peak season spikes.
+          <p className="font md:text-lg text-xs ">
+            We&apos;re looking for motivated drivers to be part of our growing
+            network. Our flexible, on-demand fleet scales effortlessly to meet
+            rising demand and peak season surges. Be part of a dynamic team that
+            keeps deliveries moving.
           </p>
           <div>
             <Link
