@@ -381,8 +381,9 @@ export const dummyRegistrations = [
   },
 ];
 
-export const dummyContactRequests = [
+export const dummyQuoteRequests = [
   {
+    id: 1,
     firstName: "Alice",
     lastName: "Wong",
     email: "alice.wong@example.com",
@@ -393,6 +394,7 @@ export const dummyContactRequests = [
     help: "I'd like to understand your delivery process better.",
   },
   {
+    id: 2,
     firstName: "Bob",
     lastName: "Johnson",
     email: "bob.johnson@example.com",
@@ -403,6 +405,7 @@ export const dummyContactRequests = [
     help: "Need pricing details and options.",
   },
   {
+    id: 3,
     firstName: "Carol",
     lastName: "Martinez",
     email: "carol.martinez@example.com",
@@ -413,6 +416,7 @@ export const dummyContactRequests = [
     help: "Our package was not delivered. Please assist.",
   },
   {
+    id: 4,
     firstName: "David",
     lastName: "Lee",
     email: "david.lee@example.com",
@@ -423,6 +427,7 @@ export const dummyContactRequests = [
     help: "Do you offer event-specific shipping?",
   },
   {
+    id: 5,
     firstName: "Eva",
     lastName: "Green",
     email: "eva.green@example.com",
@@ -433,6 +438,7 @@ export const dummyContactRequests = [
     help: "I'm interested in working with your logistics team.",
   },
   {
+    id: 6,
     firstName: "Frank",
     lastName: "Nguyen",
     email: "frank.nguyen@example.com",
@@ -443,6 +449,7 @@ export const dummyContactRequests = [
     help: "We’d like to move forward with your quote.",
   },
   {
+    id: 7,
     firstName: "Grace",
     lastName: "Turner",
     email: "grace.turner@example.com",
@@ -453,6 +460,7 @@ export const dummyContactRequests = [
     help: "The shipment arrived broken.",
   },
   {
+    id: 8,
     firstName: "Henry",
     lastName: "Adams",
     email: "henry.adams@example.com",
@@ -463,6 +471,7 @@ export const dummyContactRequests = [
     help: "Please correct the overcharge on our bill.",
   },
   {
+    id: 9,
     firstName: "Isla",
     lastName: "Rodriguez",
     email: "isla.rodriguez@example.com",
@@ -473,6 +482,7 @@ export const dummyContactRequests = [
     help: "Can you show us a demo of your system?",
   },
   {
+    id: 10,
     firstName: "Jack",
     lastName: "Chen",
     email: "jack.chen@example.com",
@@ -483,6 +493,7 @@ export const dummyContactRequests = [
     help: "Tracking link not updating.",
   },
   {
+    id: 11,
     firstName: "Kara",
     lastName: "Bell",
     email: "kara.bell@example.com",
@@ -493,6 +504,7 @@ export const dummyContactRequests = [
     help: "Please reschedule for tomorrow.",
   },
   {
+    id: 12,
     firstName: "Leo",
     lastName: "Sanders",
     email: "leo.sanders@example.com",
@@ -503,6 +515,7 @@ export const dummyContactRequests = [
     help: "We’re really happy with your team!",
   },
   {
+    id: 13,
     firstName: "Maya",
     lastName: "Fox",
     email: "maya.fox@example.com",
@@ -513,6 +526,7 @@ export const dummyContactRequests = [
     help: "How can I return this product?",
   },
   {
+    id: 14,
     firstName: "Nathan",
     lastName: "Clark",
     email: "nathan.clark@example.com",
@@ -523,6 +537,7 @@ export const dummyContactRequests = [
     help: "Can you deliver by tonight?",
   },
   {
+    id: 15,
     firstName: "Olivia",
     lastName: "King",
     email: "olivia.king@example.com",
@@ -533,6 +548,7 @@ export const dummyContactRequests = [
     help: "Looking to partner with your team.",
   },
   {
+    id: 16,
     firstName: "Paul",
     lastName: "Stone",
     email: "paul.stone@example.com",
@@ -543,6 +559,7 @@ export const dummyContactRequests = [
     help: "Please address your driver’s conduct.",
   },
   {
+    id: 17,
     firstName: "Quinn",
     lastName: "Banks",
     email: "quinn.banks@example.com",
@@ -553,6 +570,7 @@ export const dummyContactRequests = [
     help: "Did the package arrive?",
   },
   {
+    id: 18,
     firstName: "Rita",
     lastName: "Harper",
     email: "rita.harper@example.com",
@@ -563,6 +581,7 @@ export const dummyContactRequests = [
     help: "Do you ship to the US?",
   },
   {
+    id: 19,
     firstName: "Sam",
     lastName: "Porter",
     email: "sam.porter@example.com",
@@ -573,6 +592,7 @@ export const dummyContactRequests = [
     help: "My item disappeared from tracking.",
   },
   {
+    id: 20,
     firstName: "Tina",
     lastName: "Baker",
     email: "tina.baker@example.com",
@@ -586,6 +606,7 @@ export const dummyContactRequests = [
 
 export const dummySupportRequests = [
   {
+    id: 1,
     contact_reason: "Package not delivered",
     details: "The package was marked as delivered but never received.",
     firstName: "Alice",
@@ -598,6 +619,7 @@ export const dummySupportRequests = [
     issue: "Missing delivery",
   },
   {
+    id: 2,
     contact_reason: "Damaged product",
     details: "The box was crushed and item inside is broken.",
     firstName: "Brian",
@@ -610,6 +632,7 @@ export const dummySupportRequests = [
     issue: "Item damaged in transit",
   },
   {
+    id: 3,
     contact_reason: "Wrong address",
     details: "Tracking shows delivery in a different city.",
     firstName: "Cathy",
@@ -622,6 +645,7 @@ export const dummySupportRequests = [
     issue: "Incorrect delivery address",
   },
   {
+    id: 4,
     contact_reason: "Late delivery",
     details: "Expected delivery last week, still not here.",
     firstName: "Daniel",
@@ -634,6 +658,7 @@ export const dummySupportRequests = [
     issue: "Delivery delay",
   },
   {
+    id: 5,
     contact_reason: "No updates",
     details: "Tracking hasn’t changed in 5 days.",
     firstName: "Eva",
@@ -646,6 +671,7 @@ export const dummySupportRequests = [
     issue: "Stalled tracking info",
   },
   {
+    id: 6,
     contact_reason: "Delivery reschedule",
     details: "Need to change delivery date.",
     firstName: "Frank",
@@ -658,6 +684,7 @@ export const dummySupportRequests = [
     issue: "Reschedule request",
   },
   {
+    id: 7,
     contact_reason: "Wrong item",
     details: "Received wrong product SKU.",
     firstName: "Grace",
@@ -670,6 +697,7 @@ export const dummySupportRequests = [
     issue: "Incorrect product",
   },
   {
+    id: 8,
     contact_reason: "Lost package",
     details: "Carrier can't locate the shipment.",
     firstName: "Henry",
@@ -682,6 +710,7 @@ export const dummySupportRequests = [
     issue: "Package lost",
   },
   {
+    id: 9,
     contact_reason: "Damaged label",
     details: "Label was unreadable, return to sender.",
     firstName: "Ivy",
@@ -694,6 +723,7 @@ export const dummySupportRequests = [
     issue: "Unreadable tracking label",
   },
   {
+    id: 10,
     contact_reason: "Wrong province",
     details: "Package routed to wrong province.",
     firstName: "Jack",
@@ -706,6 +736,7 @@ export const dummySupportRequests = [
     issue: "Misrouted delivery",
   },
   {
+    id: 11,
     contact_reason: "Held at facility",
     details: "Stuck at Mississauga depot.",
     firstName: "Kate",
@@ -718,6 +749,7 @@ export const dummySupportRequests = [
     issue: "Facility hold",
   },
   {
+    id: 12,
     contact_reason: "Return request",
     details: "I want to return the item.",
     firstName: "Leo",
@@ -730,6 +762,7 @@ export const dummySupportRequests = [
     issue: "Return initiation",
   },
   {
+    id: 13,
     contact_reason: "Incomplete delivery",
     details: "Missing parts in the box.",
     firstName: "Mona",
@@ -742,6 +775,7 @@ export const dummySupportRequests = [
     issue: "Partial shipment",
   },
   {
+    id: 14,
     contact_reason: "Wrong tracking number",
     details: "Number doesn't match my order.",
     firstName: "Noah",
@@ -754,6 +788,7 @@ export const dummySupportRequests = [
     issue: "Invalid tracking info",
   },
   {
+    id: 15,
     contact_reason: "Contact driver",
     details: "Can the driver call on arrival?",
     firstName: "Olivia",
@@ -766,6 +801,7 @@ export const dummySupportRequests = [
     issue: "Driver communication request",
   },
   {
+    id: 16,
     contact_reason: "Delay explanation",
     details: "Why is my package still in transit?",
     firstName: "Peter",
@@ -778,6 +814,7 @@ export const dummySupportRequests = [
     issue: "Long transit delay",
   },
   {
+    id: 17,
     contact_reason: "Re-attempt delivery",
     details: "I missed the first delivery.",
     firstName: "Queenie",
@@ -790,6 +827,7 @@ export const dummySupportRequests = [
     issue: "Missed delivery attempt",
   },
   {
+    id: 18,
     contact_reason: "Billing discrepancy",
     details: "Charged for express but delivered ground.",
     firstName: "Raj",
@@ -802,6 +840,7 @@ export const dummySupportRequests = [
     issue: "Incorrect billing type",
   },
   {
+    id: 19,
     contact_reason: "Update address",
     details: "I moved, update delivery location.",
     firstName: "Sophie",
@@ -814,6 +853,7 @@ export const dummySupportRequests = [
     issue: "Change address",
   },
   {
+    id: 20,
     contact_reason: "Lost label",
     details: "The return label is missing.",
     firstName: "Tom",
