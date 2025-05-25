@@ -1,28 +1,19 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { List, LayoutGrid } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function ViewToggle({
-  onChange,
-}: {
+interface Props {
+  view: "grid" | "list";
   onChange?: (view: "grid" | "list") => void;
-}) {
-  const [view, setView] = useState<"grid" | "list">("grid");
-
-  const toggleView = () => {
-    const newView = view === "grid" ? "list" : "grid";
-    setView(newView);
-    onChange?.(newView);
-  };
-
+}
+export function ViewToggle({ view, onChange = () => {} }: Props) {
   return (
     <Button
-      onClick={toggleView}
+      onClick={() => onChange(view === "grid" ? "list" : "grid")}
       variant="outline"
-      className="lg:flex  hidden items-center cursor-pointer gap-2 rounded-md border px-4 py-2 transition hover:bg-muted"
+      className=" hidden lg:flex items-center cursor-pointer gap-2 rounded-md border px-4 py-2 transition hover:bg-muted"
     >
       <motion.div
         key={view}
@@ -32,13 +23,15 @@ export function ViewToggle({
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
         {view === "grid" ? (
-          <LayoutGrid className="h-5 w-5 text-muted-foreground" />
-        ) : (
+          // <LayoutGrid className="h-5 w-5 text-muted-foreground" />
           <List className="h-5 w-5 text-muted-foreground" />
+        ) : (
+          // <List className="h-5 w-5 text-muted-foreground" />
+          <LayoutGrid className="h-5 w-5 text-muted-foreground" />
         )}
       </motion.div>
       <span className="capitalize text-sm text-muted-foreground">
-        {view} view
+        {view === "grid" ? "list" : "grid"} view
       </span>
     </Button>
   );
