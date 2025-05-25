@@ -1,3 +1,4 @@
+"use client";
 import DashboardHeader from "@/components/dashboard/dashboard-header";
 import React, { useEffect, useState } from "react";
 
