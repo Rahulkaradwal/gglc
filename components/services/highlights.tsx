@@ -1,13 +1,7 @@
+"use client";
 import React from "react";
-// import { motion } from "framer-motion";
-import {
-  Truck,
-  Leaf,
-  //   Clock3,
-  //   Route,
-  DollarSign,
-  Headphones,
-} from "lucide-react";
+import { motion } from "framer-motion";
+import { Truck, Leaf, DollarSign, Headphones } from "lucide-react";
 
 const items = [
   {
@@ -36,21 +30,17 @@ const items = [
     icon: <Headphones size={32} />,
   },
 ];
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 },
+  },
+};
 
-// Framer motion variants
-// const containerVariant = {
-//   hidden: {},
-//   show: {
-//     transition: {
-//       staggerChildren: 0.2,
-//     },
-//   },
-// };
-
-// const childVariant = {
-//   hidden: { opacity: 0, y: 30 },
-//   show: { opacity: 1, y: 0 },
-// };
+const childVariant = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 function Highlights() {
   return (
@@ -59,11 +49,18 @@ function Highlights() {
         <span className="text-green-700">Green Gear</span> Service&apos;s
         Highlights
       </h1>
-      <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10   md:gap-y-14 lg:gap-10 justify-items-center">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={container}
+        className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10   md:gap-y-14 lg:gap-10 justify-items-center"
+      >
         {items.map((feature, index) => (
-          <div
+          <motion.div
+            variants={childVariant}
             key={index}
-            className={`
+            className="
               relative  border-2  border-green-800 shadow-md rounded-[1.7rem] rounded-br-sm 
               pt-10 md:pt-12 px-4 pb-4
               w-32 h-24 
@@ -71,7 +68,7 @@ function Highlights() {
               md:w-56 md:h-52 
               lg:w-72 lg:h-64
               flex flex-col items-center text-center transition-all duration-300
-            `}
+            "
           >
             <span
               className={`
@@ -95,9 +92,9 @@ function Highlights() {
                 {feature.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

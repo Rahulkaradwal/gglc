@@ -1,3 +1,4 @@
+import HeaderNavLinks from "@/components/dashboard/dashboard-navlinks";
 import React from "react";
 
 function DashboardLayout({
@@ -5,7 +6,12 @@ function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <>
+      <HeaderNavLinks />
+      {children}
+    </>
+  );
 }
 
 export default DashboardLayout;

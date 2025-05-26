@@ -6,18 +6,17 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-const links = [
-  { name: "Our Services", href: "/services" },
-  { name: "Contact Support", href: "/support" },
-  { name: "Get Quote", href: "/get-a-quote" },
-  { name: "About Us", href: "/about" },
-  { name: "Join Us", href: "/join-us" },
+const dashboardLinks = [
+  { name: "Home", href: "/" },
+  { name: "Join Requests", href: "/dashboard/join-requests" },
+  { name: "Quote Requests", href: "/dashboard/quote-requests" },
+  { name: "Support Requests", href: "/dashboard/support-requests" },
 ];
 
 const underlineClass =
   "absolute left-0 bottom-0 w-full h-[2px] bg-primary origin-left transition-transform duration-300";
 
-const Header = () => {
+const HeaderNavLinks = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const pathname = usePathname();
@@ -26,26 +25,21 @@ const Header = () => {
     setIsMounted(true);
   }, []);
 
-  // Avoid rendering before mount to prevent hydration issues
   if (!isMounted) return null;
-
-  const isDashboard = pathname?.startsWith("/dashboard");
-
-  if (isDashboard) return null;
 
   return (
     <nav
-      className="w-full border-b shadow-sm bg-gradient-to-r from-slate-50 to-green-50 top-0 left-0 z-50"
+      className="w-full  border-b shadow-sm bg-gradient-to-r from-slate-50 to-green-50 top-0 left-0 z-50"
       role="navigation"
     >
       <div className="flex items-center justify-between mx-6 md:mx-16 py-4">
-        <Link href="/">
+        <Link href="/dashboard">
           <Logo />
         </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-10 text-gray-800 font-semibold text-lg">
-          {links.map((link) => {
+          {dashboardLinks.map((link) => {
             const isActive = pathname === link.href;
 
             return (
@@ -84,7 +78,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       {menuOpen && (
         <ul className="flex flex-col items-start px-6 md:hidden bg-white shadow-md border-t">
-          {links.map((link) => {
+          {dashboardLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <li key={link.name} className="w-full">
@@ -108,4 +102,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderNavLinks;
