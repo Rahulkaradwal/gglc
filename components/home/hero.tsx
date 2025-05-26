@@ -1,10 +1,23 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
 function Hero() {
   return (
-    <section className="flex flex-col-reverse  lg:pt-28 lg:flex-row items-center justify-between gap-6 px-4 md:px-16 mt-10 mb-10">
+    <motion.section
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      variants={fadeUp}
+      className="flex flex-col-reverse  lg:pt-28 lg:flex-row items-center justify-between gap-6 px-4 md:px-16 mt-10 mb-10"
+    >
       {/* Text content */}
       <div className="text-center  lg:text-left">
         <h3 className="text-sm md:text-2xl font-bold text-green-700 mb-2">
@@ -33,7 +46,7 @@ function Hero() {
           priority
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

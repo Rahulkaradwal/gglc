@@ -1,11 +1,23 @@
 // Service page hero section
+"use client";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function Hero() {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  };
   return (
-    <section className="flex mt-6 sm:mt-10   lg:pt-28  lg:flex-row items-center justify-between gap-1 md:gap-10  sm:px-6 md:px-16  mb-10">
+    <motion.section
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      variants={fadeUp}
+      className="flex mt-6 sm:mt-10   lg:pt-28  lg:flex-row items-center justify-between gap-1 md:gap-10  sm:px-6 md:px-16  mb-10"
+    >
       {/* Text content */}
       <div className="w-2/3 md:text-center md:w-2/5  lg:text-left">
         <h3 className="text-sm md:text-2xl font-bold text-green-700 mb-2">
@@ -42,7 +54,7 @@ function Hero() {
           fill
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

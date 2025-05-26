@@ -1,8 +1,15 @@
 // Service page hero section
+"use client";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { Car, FileText, Handshake, IdCard, Speech, User } from "lucide-react";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
 
 const items = [
   {
@@ -34,13 +41,15 @@ const items = [
 
 function Hero() {
   return (
-    <main>
+    <motion.main
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      variants={fadeUp}
+    >
       <section className="flex mt-6 sm:mt-10  lg:pt-10  flex-row items-stretch justify-between gap-3 md:gap-4  sm:px-6 md:px-14 mx-0.5   mb-10">
         {/* Text content */}
         <div className=" flex-3/4  md:w-[50%]  ">
-          {/* <h3 className="text-sm md:text-2xl font-bold text-green-700 mb-2">
-          Fast, Reliable, Flexible
-        </h3> */}
           <h1 className="text-lg mt-2 md:mt-4 md:text-2xl lg:text-4xl xl:text-6xl font-semibold mb-4">
             Drive Towards Your <span className="text-green-700">Goals</span>
           </h1>
@@ -116,7 +125,7 @@ function Hero() {
           </div>
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 }
 
