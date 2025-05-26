@@ -39,7 +39,7 @@ const DashboardPageItemsData = [
 
 function Dashboard() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative ">
       {/* Background layer */}
       <div
         className="absolute inset-0 bg-cover bg-center blur-sm z-0"

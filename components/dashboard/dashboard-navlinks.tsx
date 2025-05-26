@@ -29,7 +29,7 @@ const HeaderNavLinks = () => {
 
   return (
     <nav
-      className="w-full  border-b shadow-sm bg-gradient-to-r from-slate-50 to-green-50 top-0 left-0 z-50"
+      className="w-screen -ml-10  border-b shadow-sm bg-gradient-to-r from-slate-50 to-green-50 top-0 left-0 z-50"
       role="navigation"
     >
       <div className="flex items-center justify-between mx-6 md:mx-16 py-4">

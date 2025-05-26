@@ -7,10 +7,10 @@ function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div className="-px-10">
       <HeaderNavLinks />
       {children}
-    </>
+    </div>
   );
 }
 
