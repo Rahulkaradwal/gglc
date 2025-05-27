@@ -1,3 +1,4 @@
+import RouteProtector from "@/components/auth/RouteProtector";
 import HeaderNavLinks from "@/components/dashboard/dashboard-navlinks";
 import React from "react";
 
@@ -7,10 +8,12 @@ function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="-px-10">
-      <HeaderNavLinks />
-      {children}
-    </div>
+    <RouteProtector>
+      <div className="-px-10">
+        <HeaderNavLinks />
+        {children}
+      </div>
+    </RouteProtector>
   );
 }
 

@@ -1,8 +1,12 @@
-import type { Metadata } from "next";
+"use client";
+// import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/header";
 import { Footer } from "@/components/footer";
+
+import { AuthProvider } from "react-oidc-context";
+import cognitoAuthConfig from "@/cognito-config";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -10,10 +14,10 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "GGLC",
-  description: "Green Gear Shipping Company",
-};
+// export const metadata: Metadata = {
+//   title: "GGLC",
+//   description: "Green Gear Shipping Company",
+// };
 
 export default function RootLayout({
   children,
@@ -23,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} ${poppins.variable} antialiased`}>
-        <Header />
-        <div className="px-10">{children}</div>
-        <Footer />
+        <AuthProvider {...cognitoAuthConfig}>
+          <Header />
+          <div className="px-10">{children}</div>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
