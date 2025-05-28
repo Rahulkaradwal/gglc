@@ -25,7 +25,7 @@ export function LoginForm({
       <div className="grid gap-6">
         <div className="grid gap-3">
           <Label htmlFor="text">Username</Label>
-          <Input id="email" type="email" required />
+          <Input id="text" type="text" required />
         </div>
         <div className="grid gap-3">
           <div className="flex items-center justify-between">
