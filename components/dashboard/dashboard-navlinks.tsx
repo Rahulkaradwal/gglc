@@ -5,7 +5,9 @@ import Logo from "../logo";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
-import LogoutForm from "./logout-form";
+import { Button } from "../ui/button";
+import { FaSignOutAlt } from "react-icons/fa";
+import { handleSignOut } from "@/lib/cognitoActions";
 
 const dashboardLinks = [
   { name: "Home", href: "/" },
@@ -63,7 +65,13 @@ const HeaderNavLinks = () => {
               </li>
             );
           })}
-          <LogoutForm />
+          <Button
+            onClick={handleSignOut}
+            className="flex  w-fit grow items-center justify-center gap-2 rounded-md  p-3 text-md hover:bg-green-500 font-medium cursor-pointer md:flex-none md:justify-start md:p-2 md:px-3"
+          >
+            <div className="hidden md:block">Sign Out</div>
+            <FaSignOutAlt className="w-3" />
+          </Button>
         </ul>
 
         {/* Mobile Toggle Button */}
