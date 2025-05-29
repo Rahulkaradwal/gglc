@@ -5,6 +5,7 @@ import Logo from "../logo";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import LogoutForm from "./logout-form";
 
 const dashboardLinks = [
   { name: "Home", href: "/" },
@@ -62,6 +63,7 @@ const HeaderNavLinks = () => {
               </li>
             );
           })}
+          <LogoutForm />
         </ul>
 
         {/* Mobile Toggle Button */}
