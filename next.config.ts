@@ -1,11 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  functions: {
-    "api/**.js": {
-      includeFiles: "lib/generated/prisma/**",
-    },
-  },
+// next.config.js or next.config.ts
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  // other Next.js settings here...
 };
 
 export default nextConfig;
