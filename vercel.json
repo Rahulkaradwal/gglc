@@ -1,12 +1,12 @@
 {
   "functions": {
-    ".next/server/app/**/page.js": {
+    "app/**/page.js": {
       "includeFiles": [
         "lib/generated/prisma/**",
         "node_modules/.prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node"
       ]
     },
-    ".next/server/app/**/route.js": {
+    "app/**/route.js": {
       "includeFiles": [
         "lib/generated/prisma/**",
         "node_modules/.prisma/client/libquery_engine-rhel-openssl-3.0.x.so.node"
