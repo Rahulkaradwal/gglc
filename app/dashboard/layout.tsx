@@ -1,16 +1,16 @@
 import HeaderNavLinks from "@/components/dashboard/dashboard-navlinks";
-import { getUserFromSession } from "@/utils/session";
-import { cookies } from "next/headers";
+import { isAuthenticated } from "@/utils/tokenUtils";
 import { redirect } from "next/navigation";
+
 import React from "react";
 async function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const user = await getUserFromSession(await cookies());
+  const auth = await isAuthenticated();
 
-  if (!user) {
+  if (!auth.authenticated) {
     redirect("/login");
   }
   return (

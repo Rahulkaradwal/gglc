@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/popover";
 import { useFormStatus } from "react-dom";
 import { useActionState } from "react";
-import { signUp } from "@/lib/authActions";
+import { signUp } from "@/lib/apicalls/authCall";
 
 export function SignupForm({
   className,
@@ -23,7 +23,6 @@ export function SignupForm({
       const email = formData.get("email") as string;
       const password = formData.get("password") as string;
       const username = formData.get("username") as string;
-      // Call signIn with the expected payload
       return signUp({ email, username, password });
     },
     undefined

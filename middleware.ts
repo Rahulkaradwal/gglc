@@ -1,36 +1,35 @@
 import { NextResponse, type NextRequest } from "next/server";
-import {
-  getUserFromSession,
-  updateUserSessionExpiration,
-} from "./utils/session";
 
-export async function middleware(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Restrict access to /dashboard and all sub-routes
   if (pathname.startsWith("/dashboard")) {
-    const user = await getUserFromSession(request.cookies);
-    if (!user) {
+    // Match cookie name exactly as used in your server code
+    const token = request.cookies.get("auth_token")?.value;
+
+    if (!token || isTokenExpired(token)) {
       return NextResponse.redirect(new URL("/login", request.url));
     }
   }
 
-  const response = NextResponse.next();
-
-  // Optionally update session expiration
-  await updateUserSessionExpiration({
-    set: (key, value, options) => {
-      response.cookies.set({ ...options, name: key, value });
-    },
-    get: (key) => request.cookies.get(key),
-  });
-
-  return response;
+  return NextResponse.next();
 }
 
-// Only apply middleware to these routes
+// ✅ Decode and check JWT expiration manually (middleware can't use jwt.verify)
+function isTokenExpired(token: string): boolean {
+  try {
+    const payload = JSON.parse(
+      Buffer.from(token.split(".")[1], "base64").toString()
+    );
+    const now = Math.floor(Date.now() / 1000);
+    return payload.exp < now;
+  } catch (err) {
+    console.error("JWT decode error:", err);
+    return true;
+  }
+}
+
+// ✅ Restrict middleware only to dashboard paths
 export const config = {
-  matcher: [
-    "/dashboard/:path*", // middleware only runs for dashboard routes
-  ],
+  matcher: ["/dashboard/:path*"],
 };
